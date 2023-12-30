@@ -8,6 +8,9 @@ const prisma = new PrismaClient();
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma) as Adapter,
+  pages: {
+    signIn: "/signin",
+  },
   providers: [
     GoogleProvider({
       clientId: envAuth.GOOGLE_CLIENT_ID,

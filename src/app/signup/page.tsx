@@ -1,3 +1,4 @@
+import RegisterModel from "@/components/Register";
 import React from "react";
 
 type Props = {};
@@ -5,7 +6,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div>
-      <h1>Sign up</h1>
+      <RegisterModel />
     </div>
   );
 };
